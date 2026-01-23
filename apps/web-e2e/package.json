@@ -1,0 +1,10 @@
+{
+  "name": "@bug-tracking-system/web-e2e",
+  "version": "0.0.1",
+  "private": true,
+  "nx": {
+    "implicitDependencies": [
+      "@bug-tracking-system/web"
+    ]
+  }
+}
