@@ -6,9 +6,9 @@ type ButtonProps = {
     onClick?: () => void
 };
 
-export const Button = ({children}:ButtonProps) => {
+export const Button = ({children, variant='primary', onClick}:ButtonProps) => {
     return(
-        <button className="bg-red-500 text-white p-8">
+        <button className="px-4 py-2 rounded font-medium transition bg-indigo-600 text-white hover:bg-indigo-700" onClick={onClick}>
             {children}
         </button>
     )
