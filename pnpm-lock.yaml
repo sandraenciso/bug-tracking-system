@@ -168,6 +168,9 @@ importers:
 
   apps/web:
     dependencies:
+      '@bug-tracking-system/ui':
+        specifier: workspace:*
+        version: link:../../libs/ui
       next:
         specifier: ~16.0.1
         version: 16.0.10(@babel/core@7.28.6)(@playwright/test@1.58.0)(react-dom@19.2.3(react@19.2.3))(react@19.2.3)(sass@1.97.3)

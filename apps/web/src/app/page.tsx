@@ -1,6 +1,4 @@
-import styles from './page.module.css';
 import {Button} from '@bug-tracking-system/ui'
-
 
 export default function Index() {
   /*
