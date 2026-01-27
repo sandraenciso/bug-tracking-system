@@ -16,6 +16,10 @@
     "skipLibCheck": true,
     "strict": true,
     "target": "es2022",
-    "customConditions": ["@bug-tracking-system/source"]
+    "customConditions": ["@bug-tracking-system/source"],
+    "baseUrl": ".",
+    "paths": {
+      "@bug-tracking-system/ui": ["libs/ui/src/index.ts"]
+    }
   }
 }
