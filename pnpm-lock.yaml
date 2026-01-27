@@ -168,6 +168,9 @@ importers:
 
   apps/web:
     dependencies:
+      '@bug-tracking-system/config':
+        specifier: workspace:*
+        version: link:../../libs/config
       '@bug-tracking-system/types':
         specifier: workspace:*
         version: link:../../libs/types
@@ -185,6 +188,12 @@ importers:
         version: 19.2.3(react@19.2.3)
 
   apps/web-e2e: {}
+
+  libs/config:
+    dependencies:
+      '@bug-tracking-system/types':
+        specifier: workspace:*
+        version: link:../types
 
   libs/types: {}
 
