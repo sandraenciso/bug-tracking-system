@@ -168,6 +168,9 @@ importers:
 
   apps/web:
     dependencies:
+      '@bug-tracking-system/types':
+        specifier: workspace:*
+        version: link:../../libs/types
       '@bug-tracking-system/ui':
         specifier: workspace:*
         version: link:../../libs/ui
@@ -182,6 +185,8 @@ importers:
         version: 19.2.3(react@19.2.3)
 
   apps/web-e2e: {}
+
+  libs/types: {}
 
   libs/ui: {}
 

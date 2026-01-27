@@ -53,6 +53,9 @@
   ],
   "references": [
     {
+      "path": "../../libs/types"
+    },
+    {
       "path": "../../libs/ui"
     }
   ]
