@@ -19,7 +19,8 @@
     "customConditions": ["@bug-tracking-system/source"],
     "baseUrl": ".",
     "paths": {
-      "@bug-tracking-system/ui": ["libs/ui/src/index.ts"]
+      "@bug-tracking-system/ui": ["libs/ui/src/index.ts"],
+      "@bug-tracking-system/auth": ["libs/auth/src/index.ts"]
     }
   }
 }

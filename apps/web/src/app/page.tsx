@@ -1,31 +1,37 @@
-'use client';
-import {Button} from '@bug-tracking-system/ui';
-import type { Issue } from '@bug-tracking-system/types';
-import { ISSUE_STATUSES } from '@bug-tracking-system/config';
+import { auth0 } from "@bug-tracking-system/auth";
+import {LoginButton, LogoutButton, Profile} from "@bug-tracking-system/ui";
 
-const mockIssue: Issue = {
-  id: '1',
-  title: 'Test issue',
-  projectId: '1',
-  status: 'not_started',
-  priority: 'low',
-  reporterId: '1',
-  createdAt: new Date().toISOString(),
-}
+export default async function Home() {
+  const session = await auth0.getSession();
+  const user = session?.user;
 
-export default function Index() {
-  const handleClick = () => {
-    console.log(mockIssue);
-    console.log(ISSUE_STATUSES);
-  }
   return (
-    <>
-      <div className="bg-red-500 text-white p-8">
-        Tailwind está funcionando correctamente
+    <div className="app-container">
+      <div className="main-card-wrapper">
+        <img
+          src="https://cdn.auth0.com/quantum-assets/dist/latest/logos/auth0/auth0-lockup-en-ondark.png"
+          alt="Auth0 Logo"
+          className="auth0-logo"
+        />
+        <h1 className="main-title">Next.js + Auth0</h1>
+        
+        <div className="action-card">
+          {user ? (
+            <div className="logged-in-section">
+              <p className="logged-in-message">✅ Successfully logged in!</p>
+              <Profile />
+              <LogoutButton />
+            </div>
+          ) : (
+            <>
+              <p className="action-text">
+                Welcome! Please log in to access your protected content.
+              </p>
+              <LoginButton />
+            </>
+          )}
+        </div>
       </div>
-      <Button onClick={handleClick}>
-        Testing button
-      </Button> 
-    </>
+    </div>
   );
-};
+}
