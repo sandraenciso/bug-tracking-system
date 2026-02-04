@@ -1,9 +1,13 @@
-import { auth0 } from "@bug-tracking-system/auth";
 import {LoginButton, LogoutButton, Profile} from "@bug-tracking-system/ui";
+import { getCurrentUser } from "../get-current-user";
 
 export default async function Home() {
-  const session = await auth0.getSession();
-  const user = session?.user;
+  // const session = await auth0.getSession();
+  // const user = session?.user;
+
+  // console.log('session user', session);
+
+  const user = await getCurrentUser();
 
   return (
     <div className="app-container">

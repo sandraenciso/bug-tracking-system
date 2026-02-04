@@ -20,6 +20,12 @@
     },
     {
       "path": "./libs/auth"
+    },
+    {
+      "path": "./libs/schemas"
+    },
+    {
+      "path": "./libs/store"
     }
   ]
 }

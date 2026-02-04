@@ -53,6 +53,12 @@
   ],
   "references": [
     {
+      "path": "../../libs/store"
+    },
+    {
+      "path": "../../libs/schemas"
+    },
+    {
       "path": "../../libs/auth"
     },
     {

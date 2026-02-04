@@ -9,6 +9,8 @@
     "@bug-tracking-system/ui": "workspace:*",
     "@bug-tracking-system/types": "workspace:*",
     "@bug-tracking-system/config": "workspace:*",
-    "@bug-tracking-system/auth": "workspace:*"
+    "@bug-tracking-system/auth": "workspace:*",
+    "@bug-tracking-system/schemas": "workspace:*",
+    "@bug-tracking-system/store": "workspace:*"
   }
 }
