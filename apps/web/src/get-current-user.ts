@@ -9,6 +9,5 @@ export async function getCurrentUser() {
     id: session.user.sub,
     email: session.user.email,
     name: session.user.name,
-    role: session.user['https://roles']?.[0] ?? 'user',
   };
 }
