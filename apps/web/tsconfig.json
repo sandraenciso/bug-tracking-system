@@ -50,5 +50,25 @@
     "eslint.config.js",
     "eslint.config.cjs",
     "eslint.config.mjs"
+  ],
+  "references": [
+    {
+      "path": "../../libs/store"
+    },
+    {
+      "path": "../../libs/schemas"
+    },
+    {
+      "path": "../../libs/auth"
+    },
+    {
+      "path": "../../libs/config"
+    },
+    {
+      "path": "../../libs/types"
+    },
+    {
+      "path": "../../libs/ui"
+    }
   ]
 }

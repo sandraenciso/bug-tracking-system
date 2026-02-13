@@ -8,6 +8,24 @@
     },
     {
       "path": "./apps/web"
+    },
+    {
+      "path": "./libs/ui"
+    },
+    {
+      "path": "./libs/types"
+    },
+    {
+      "path": "./libs/config"
+    },
+    {
+      "path": "./libs/auth"
+    },
+    {
+      "path": "./libs/schemas"
+    },
+    {
+      "path": "./libs/store"
     }
   ]
 }

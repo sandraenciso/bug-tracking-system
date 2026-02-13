@@ -5,6 +5,12 @@
   "dependencies": {
     "next": "~16.0.1",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "@bug-tracking-system/ui": "workspace:*",
+    "@bug-tracking-system/types": "workspace:*",
+    "@bug-tracking-system/config": "workspace:*",
+    "@bug-tracking-system/auth": "workspace:*",
+    "@bug-tracking-system/schemas": "workspace:*",
+    "@bug-tracking-system/store": "workspace:*"
   }
 }

@@ -16,6 +16,15 @@
     "skipLibCheck": true,
     "strict": true,
     "target": "es2022",
-    "customConditions": ["@bug-tracking-system/source"]
+    "customConditions": ["@bug-tracking-system/source"],
+    "baseUrl": ".",
+    "paths": {
+      "@bug-tracking-system/auth": ["libs/auth/src/index.ts"],
+      "@bug-tracking-system/config": ["libs/config/src/index.ts"],
+      "@bug-tracking-system/schemas": ["libs/schemas/src/index.ts"],
+      "@bug-tracking-system/types": ["libs/types/src/index.ts"],
+      "@bug-tracking-system/store": ["libs/store/src/index.ts"],
+      "@bug-tracking-system/ui": ["libs/ui/src/index.ts"],
+    }
   }
 }
